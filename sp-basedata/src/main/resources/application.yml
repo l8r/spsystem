@@ -1,5 +1,5 @@
 server:
-  port: 6060
+  port: 6050
   servlet:
     context-path: /basedata   
 spring:
@@ -41,20 +41,6 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
-  freemarker:
-    allow-request-override: false
-    allow-session-override: false
-    cache: true
-    charset: UTF-8
-    check-template-location: true
-    content-type: text/html
-    enabled: true
-    expose-request-attributes: false
-    expose-session-attributes: false
-    expose-spring-macro-helpers: true
-    prefer-file-system-access: true
-    suffix: .ftl
-    template-loader-path: classpath:/templates/
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: cn.jiafeng.service.usercenter.dao.entity
