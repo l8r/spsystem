@@ -11,7 +11,7 @@ public class HomeController extends BaseController {
 	@RequestMapping("index")
 	public Object Index() {
 		return Func(() -> {
-			return "Hello world!";
+			return "Hello world!"; 
 		});
 	}
 }

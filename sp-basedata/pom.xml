@@ -27,6 +27,16 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<!--必须引入 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 			<exclusions>
@@ -36,6 +46,8 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+
 
 		<!-- <dependency> <groupId>org.springframework.cloud</groupId> <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId> 
 			</dependency> -->
@@ -56,11 +68,6 @@
 			<artifactId>jackson-dataformat-yaml</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-freemarker</artifactId>
-			<version>1.5.6.RELEASE</version>
-		</dependency>
 		<!--热更新，热加载，不用每次重启启动类 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

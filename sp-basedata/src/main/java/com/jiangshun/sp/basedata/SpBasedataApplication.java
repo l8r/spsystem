@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -11,7 +12,7 @@ import org.springframework.web.filter.CorsFilter;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-//@EnableEurekaServer
+@EnableDiscoveryClient
 @MapperScan("cn.jiafeng.service.usercenter.dao")
 public class SpBasedataApplication {
 
@@ -19,7 +20,6 @@ public class SpBasedataApplication {
 		SpringApplication.run(SpBasedataApplication.class, args);
 	}
 	
-
 	private CorsConfiguration buildConfig() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.addAllowedOrigin("*");

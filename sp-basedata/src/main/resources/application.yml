@@ -1,8 +1,18 @@
 server:
-  port: 6050
+  port: 5001
   servlet:
-    context-path: /basedata   
+    context-path: /basedata
+eureka:
+  client:
+    enabled: false
+    service-url:
+      defaultZone: http://localhost:5000/eureka/
+  instance:
+    instance-id: basedata-5000
+    prefer-ip-address: true
 spring:
+  application:
+    name: basedata
   redis:
     database: 0
     timeout: 10000
