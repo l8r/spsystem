@@ -3,6 +3,11 @@ package com.jiangshun.sp.basedata.extend.exception;
 
 public class ServiceErrorException extends ServiceException {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4485804107906345304L;
+
 	public ServiceErrorException() {
 		super();
 	}

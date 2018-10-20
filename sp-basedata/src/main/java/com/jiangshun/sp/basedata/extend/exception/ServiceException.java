@@ -4,6 +4,10 @@ package com.jiangshun.sp.basedata.extend.exception;
 import java.util.Map;
 
 public class ServiceException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1608316879739850559L;
 	protected String code;
 	protected String message;
 	protected Map<String, String> codeMsgList;

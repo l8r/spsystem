@@ -1,5 +1,8 @@
 package com.jiangshun.sp.basedata.extend;
 
-public class Action {
+import com.jiangshun.sp.basedata.extend.exception.ServiceException;
 
+@FunctionalInterface
+public interface Action {
+	public abstract void run() throws ServiceException, Exception;
 }

@@ -1,6 +1,7 @@
 package com.jiangshun.sp.basedata.extend.exception;
 
 public class ServiceVerify {
+
 	public ServiceVerify() {
 
 	}
