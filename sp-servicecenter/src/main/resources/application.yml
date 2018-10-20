@@ -3,7 +3,12 @@ server:
 spring:
   application:
     name: servicecenter
-
+  security:
+    basic:
+      enabled: true
+    user:
+      name: admin
+      password: admin
 eureka:
   instance:
     hostname: localhost
@@ -12,4 +17,4 @@ eureka:
     fetch-registry: false
     service-url:
       #defaultZone: http://peer2:8002/eureka,http://peer3:8003/eureka
-      defaultZone: http://localhost:5000/eureka/
+      defaultZone: http://admin:admin@localhost:5000/eureka
